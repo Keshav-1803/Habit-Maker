@@ -1,3 +1,4 @@
+---
 # Habhit Maker
 
 Habhit Maker is a simple React application to track and manage your daily habits. You can add new habits, view them, and delete them as needed.
@@ -74,10 +75,4 @@ If you'd like to contribute to Habhit Maker, please follow these steps:
 
 We welcome contributions and feedback from the community!
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
-
-Feel free to customize this README according to your project's specific details, such as adding more sections for advanced features, deployment instructions, or any other relevant information. Good luck with your Habhit Maker project! 🚀
