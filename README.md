@@ -1,71 +1,83 @@
-# Getting Started with Create React App
+# Habhit Maker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Habhit Maker is a simple React application to track and manage your daily habits. You can add new habits, view them, and delete them as needed.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To get started with Habhit Maker, follow these steps:
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/habhit-maker.git
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
+   ```bash
+   cd habhit-maker
+   ```
 
-### `npm test`
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Running the App
 
-### `npm run build`
+Once you've installed the dependencies, you can run the app locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app should now be running at [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+### Adding Habits
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can add new habits by filling out the form in the `InputHabits` component. Enter the action you want to perform, the motivation behind it, where you plan to do it, the date, and time.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Viewing Habits
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+All your added habits are displayed in a list in the `HabitsShow` component. You can see the action, motivation, environment, date, and time for each habit.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Deleting Habits
 
-## Learn More
+If you want to remove a habit, simply click the "Delete" button next to it in the list. You can also clear all habits at once by using the "Clean All Habits" button in the `InputHabits` component.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### App
 
-### Code Splitting
+The main `App` component serves as the entry point of the application. It manages the state of habits using React's `useState` hook.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### InputHabits
 
-### Analyzing the Bundle Size
+The `InputHabits` component is responsible for rendering the form where users can add new habits. It includes input fields for action, motivation, environment, date, and time. Users can submit the form to add a new habit or clear all habits.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### HabitsShow
 
-### Making a Progressive Web App
+The `HabitsShow` component displays the list of added habits. It includes a table with columns for Sr. No, Action, Motivation, Environment, Date, Time, and a "Delete" button for each habit.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+If you'd like to contribute to Habhit Maker, please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/my-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'Add new feature'`)
+5. Push to the branch (`git push origin feature/my-feature`)
+6. Create a new Pull Request
 
-### Deployment
+We welcome contributions and feedback from the community!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Habit-Maker
+---
+
+Feel free to customize this README according to your project's specific details, such as adding more sections for advanced features, deployment instructions, or any other relevant information. Good luck with your Habhit Maker project! 🚀
