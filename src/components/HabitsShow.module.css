@@ -1,0 +1,39 @@
+.habitList {
+  margin-top: 20px;
+}
+
+.habitList table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.habitList th,
+.habitList td {
+  padding: 16px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  font-size: 21px;
+  text-decoration: dotted;
+}
+
+.habitList th {
+  background-color: #2c2626;
+}
+
+.habitList td {
+  background-color: #c0aaaa, 0.3;
+}
+
+.habitList button {
+  padding: 4px 8px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.habitList button:hover {
+  background-color: #c82333;
+}

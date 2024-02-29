@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ParentContainer from "./components/ParentContainer";
+import InputHabits from "./components/InputHabits";
+import HabitsShow from "./components/HabitsShow";
 
-function App() {
+export default function App() {
+  const [habits, setHabits] = useState([]);
+  const addHabit = (habit) => {
+    setHabits([...habits, habit]);
+  };
+
+  const handleDelete = (index) => {
+    const updateHabit = habits.filter((_,i) => i !== index);
+      setHabits(updateHabit);
+    }
+
+  const handleDeleteAll = () =>{
+    setHabits([]);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ParentContainer>
+        <h1>HABHIT MAKER</h1>
+        <InputHabits onAddHabit={addHabit} handleClearAll={handleDeleteAll}/>
+        <HabitsShow habits={habits} handleDelete={handleDelete}/>
+      </ParentContainer>
     </div>
   );
 }
-
-export default App;
